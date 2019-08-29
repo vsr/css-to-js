@@ -10,10 +10,16 @@ This is helpful when you can't or don't want to add or insert a `style` tag but 
 
 ## API
 
-...
+```js
+const { cssToJs } = require('@vsr/css-to-js');
+const fs = require('fs');
+const css = fs.readFileSync('./test/styles/pure-min.css').toString();
+console.log(cssToJs(css));
+```
 
 ## TODO
 
-* develop cli interface
 * develop api
+* write tests
 * develop script generator
+* develop cli interface
