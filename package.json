@@ -1,0 +1,12 @@
+{
+  "name": "@vsr/css-to-js",
+  "version": "0.0.1",
+  "description": "Converts css code to JS code that can inject styles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rockraikar@gmail.com",
+  "license": "ISC"
+}
