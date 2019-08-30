@@ -6,18 +6,22 @@ const mapRule = rule => {
   return `${rule.directive}: ${rule.value};`;
 };
 
+const escSelector = selector => selector.replace(/\n/gim, ' ');
+
 const generateRules = cssTree => {
   const cssRules = cssTree.map(node => {
     switch (node.type) {
       case 'media':
-        return `${node.selector} { ${generateRules(node.subStyles).join(
-          ' '
-        )} }`;
+        return `${escSelector(node.selector)} { ${generateRules(
+          node.subStyles
+        ).join(' ')} }`;
       case 'keyframes':
         return node.styles ? node.styles : '';
       default:
         if (node.rules)
-          return `${node.selector} { ${node.rules.map(mapRule).join('')} }`;
+          return `${escSelector(node.selector)} { ${node.rules
+            .map(mapRule)
+            .join('')} }`;
         else {
           console.warn('Node not processed', node);
           return '';
