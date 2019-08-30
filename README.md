@@ -13,7 +13,7 @@ npm i @vsr/css-to-js
 ## CLI
 
 ```sh
-css-to-js -i my-css-file.css -o css-embed.js
+npx @vsr/css-to-js -i my-css-file.css -o css-embed.js
 ```
 
 ## API
