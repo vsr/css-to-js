@@ -1,15 +1,30 @@
 {
   "name": "@vsr/css-to-js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Converts css code to JS code that can inject styles.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
-  "keywords": [],
+  "bin": {
+    "css-to-js": "./cli.js"
+  },
+  "keywords": [
+    "css to js",
+    "css js embed"
+  ],
   "author": "rockraikar@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/vsr/css-to-js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vsr/css-to-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vsr/css-to-js/issues"
+  },
   "dependencies": {
-    "jotform-css.js": "^1.0.1"
+    "jotform-css.js": "^1.0.1",
+    "minimist": "^1.2.0"
   }
 }
