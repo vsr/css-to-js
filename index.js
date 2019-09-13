@@ -38,7 +38,7 @@ const generateStyleJs = cssRules => {
   document.head.appendChild(el);
   var sheet = el.sheet;
   function addRule(rule){
-    try { sheet.insertRule(rule, sheet.rules.length); }
+    try { sheet.insertRule(rule, sheet.cssRules.length); }
     catch (e) { console.warn('Error inserting rule', rule, e); }
   }
   ${cssRules

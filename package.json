@@ -1,6 +1,6 @@
 {
   "name": "@vsr/css-to-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Converts css code to JS code that can inject styles.",
   "main": "index.js",
   "scripts": {
